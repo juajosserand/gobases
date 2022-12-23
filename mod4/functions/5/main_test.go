@@ -20,7 +20,7 @@ func TestAnimalFuncs(t *testing.T) {
 	tests := []TestAnimalFunc{
 		{"TestDogFunc", "dog"},
 		{"TestCatFunc", "cat"},
-		{"TestHamsterFunc", "hasmter"},
+		{"TestHamsterFunc", "hamster"},
 		{"TestTarantulaFunc", "tarantula"},
 	}
 
