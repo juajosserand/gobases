@@ -37,9 +37,7 @@ func TestAnimalFuncs(t *testing.T) {
 }
 
 func TestAnimalFuncsErrorInvalid(t *testing.T) {
-	test := TestAnimalFunc{"TestDogFunc", "dragon"}
-
-	f, err := animal(test.Animal)
+	f, err := animal("dragon")
 	assert.NotNil(t, err)
 	assert.Nil(t, f)
 }
