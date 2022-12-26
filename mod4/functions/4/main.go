@@ -1,7 +1,13 @@
 package main
 
-func Operation(op func(...int) float64, values ...int) float64 {
-	return op(values...)
+import "errors"
+
+func Operation(op func(...int) float64, values ...int) (float64, error) {
+	if op != nil {
+		return op(values...), nil
+	}
+
+	return 0, errors.New("invalid operation")
 }
 
 func min(values ...int) (min float64) {
