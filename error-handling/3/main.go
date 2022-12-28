@@ -13,6 +13,7 @@ func main() {
 
 		if err := recover(); err != nil {
 			fmt.Println("errors were detected at runtime")
+			fmt.Println(err)
 		}
 	}()
 
@@ -24,17 +25,34 @@ func main() {
 		Address:     "Customer 1 Address",
 	}
 
-	var err error
-	s := storage.NewCustomerStorage()
+	// c2 := model.Customer{
+	// 	ID:          2,
+	// 	Name:        "Customer 2",
+	// 	DNI:         "12.345.679",
+	// 	PhoneNumber: "0123-456710",
+	// 	Address:     "Customer 2 Address",
+	// }
 
-	// adding customer, no error expected
-	s.Add(c1)
+	s, err := storage.NewCustomerStorage()
+	if err != nil {
+		panic(err)
+	}
+
+	// adding customer, no error expected if c1 and c2 not in file
+	// err = s.Add(c1)
+	// if err != nil {
+	// 	panic(err)
+	// }
+
+	// err = s.Add(c2)
+	// if err != nil {
+	// 	panic(err)
+	// }
 
 	// expecting customer validation error
-	c1.ID = 0 // invalid id
+	c1.ID = 0
 	err = s.Add(c1)
 	if err != nil {
-		fmt.Println(err.Error())
 		panic(err)
 	}
 
@@ -42,7 +60,6 @@ func main() {
 	c1.ID = 1
 	err = s.Add(c1)
 	if err != nil {
-		fmt.Println(err.Error())
 		panic(err)
 	}
 }

@@ -10,11 +10,11 @@ var (
 )
 
 type Customer struct {
-	ID          uint
-	Name        string
-	DNI         string
-	PhoneNumber string
-	Address     string
+	ID          uint   `json:"id"`
+	Name        string `json:"name"`
+	DNI         string `json:"dni"`
+	PhoneNumber string `json:"phone_numbre"`
+	Address     string `json:"address"`
 }
 
 func (c *Customer) Validate() error {
