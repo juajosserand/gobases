@@ -1,0 +1,3 @@
+customer1, value1
+customer2, value2
+customer3, value3
