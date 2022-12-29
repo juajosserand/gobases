@@ -13,3 +13,5 @@ Repository containing Go Bases exercises from the Mercado Libre Go IT Bootcamp.
 - Errors (errors and fmt) ([link](https://github.com/juajosserand/gobases/tree/main/errors))
 
 - Error Handling (panic, defer and recover) ([link](https://github.com/juajosserand/gobases/tree/main/error-handling))
+
+- Challenge ([link](https://github.com/juajosserand/gobases/tree/main/challenge))
