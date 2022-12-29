@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bootcamp-go/desafio-go-bases/internal/ticket"
+	"github.com/juajosserand/gobases/challenge/internal/ticket"
 )
 
 func (r *repository) GetCountByPeriod(time string) (total int, err error) {

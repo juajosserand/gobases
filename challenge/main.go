@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/bootcamp-go/desafio-go-bases/internal/repository"
-	"github.com/bootcamp-go/desafio-go-bases/internal/ticket"
+	"github.com/juajosserand/gobases/challenge/internal/repository"
+	"github.com/juajosserand/gobases/challenge/internal/ticket"
 )
 
 func main() {

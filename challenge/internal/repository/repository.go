@@ -7,7 +7,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/bootcamp-go/desafio-go-bases/internal/ticket"
+	"github.com/juajosserand/gobases/challenge/internal/ticket"
 )
 
 var (

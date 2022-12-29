@@ -1,4 +1,4 @@
-module github.com/bootcamp-go/desafio-go-bases
+module github.com/juajosserand/gobases/challenge
 
 go 1.17
 
